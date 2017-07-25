@@ -21,7 +21,7 @@ ADD ./confd/templates/* /etc/confd/templates/
 ADD ./confd/conf.d/* /etc/confd/conf.d/
 
 # Add volumes for Ceph config and data
-VOLUME ["/etc/ceph","/var/lib/ceph", "/etc/ganesha"]
+VOLUME ["/etc/ceph", "/var/lib/ceph", "/etc/ganesha", "/usr/bin/ceph", "/var/run/ceph"]
 
 # Execute the entrypoint
 WORKDIR /
